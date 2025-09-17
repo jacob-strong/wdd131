@@ -1,0 +1,65 @@
+h1 {
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+h2 {
+    text-align: center;
+    color: #3468a8;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-bottom: 0px;
+}
+
+#mission-statement {
+    font-size: 15px;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8%;
+    line-height: 1.4;
+}
+
+#content {
+    max-width: 50%;
+    margin: 25px auto;
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.list {
+    list-style-type: decimal;
+    margin: 0 auto;
+}
+
+.list li {
+    margin-bottom: 20px;
+}
+
+#topics {
+    width: 55%;
+    margin: 0 auto;
+}
+
+hr {
+    max-width: 60%;
+    background-color: lightgrey;
+    margin-top: 0px;
+    margin-bottom: 5%;
+    height: 1px;
+    border: none;
+}
+
+img {
+    width: 15%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
