@@ -32,8 +32,24 @@ console.log(course); //works fine, course is global
 let selectElem = document.getElementById('webdevlist');
 let h2 = document.querySelector('h2');
 selectElem.addEventListener('change', function(){
-    h2.style.color = 'black'; //reset all to black first
+    document.querySelector('#html').style.color = 'black';
+    document.querySelector('#css').style.color = 'black';
+    document.querySelector('#js').style.color = 'black';
     let codeValue = selectElem.value;
     console.log(codeValue);
     document.getElementById(codeValue).style.color = 'red';
 })
+
+const newPara = document.createElement('p');
+newPara.innerText = "added text here";
+
+const topics = document.querySelector('#topics');
+topics.appendChild(newPara);
+
+const image = document.querySelector('img');
+image.setAttribute('src', 'images/html_css_js_logos.jpg');
+image.setAttribute('alt', 'HTML CSS JS Logo');
+
+//document.body.className = 'blue';
+
+document.body.style.backgroundColor = 'lightblue';
