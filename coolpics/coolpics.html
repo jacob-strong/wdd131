@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Pics: Part 1</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="coolpics.css">
+    <link rel="stylesheet" href="coolpics.css">\
+    <script src="coolpics.js" defer></script>
 </head>
 <body>
     <header>
@@ -41,5 +42,11 @@
     <footer>
         <p>&copy; Not a real site lol</p>
     </footer>
+    <div id="modal" class="modal hidden" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true">
+            <button id="modal-close" class="modal-close" aria-label="Close image">✕</button>
+            <img id="modal-img" src="" alt="">
+        </div>
+    </div>
 </body>
 </html>
