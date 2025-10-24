@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	text-align: center;
+	padding: 1.5rem 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header h1 {
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	font-size: 1.8rem;
+	color: #333;
+	margin: 0.25rem 0 0.75rem;
+}
+
+header nav {
+	display: flex;
+	justify-content: flex-end;
+	gap: 1.25rem;
+	width: 90%;
+	margin: 0.75rem auto;
+}
+
+header nav a {
+	color: #b52f4e;
+	text-decoration: none;
+	font-weight: 700;
+	transition: color 0.3s;
+}
+
+header nav a:hover {
+	color: #7a1f35;
+}
+
+.divider {
+	border: 0;
+	height: 3px;
+	background-color: #f2d4b6;
+	width: 100%;
+	margin: 0.75rem 0;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 1.5rem;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+#book {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+.book {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding-bottom: 2rem;
+	border-bottom: 3px solid #f2d4b6;
+}
+
+.publisher-info {
+	text-align: right;
+	align-self: flex-end;
+	font-size: 0.95rem;
+	line-height: 1.5;
+	font-style: italic;
+	color: #555;
+}
+
+.book-divider {
+	display: none;
+}
+
+.book-info {
+	text-align: left;
+}
+
+.book-info h2 {
+	font-family: 'Merriweather', serif;
+	color: #b52f4e;
+	font-size: 1.3rem;
+	margin: 0.25rem 0 0.5rem;
+}
+
+.book-info img {
+	max-width: 250px;
+	height: auto;
+	display: block;
+	margin: 0.75rem 0;
+	border-radius: 4px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-info p {
+	max-width: 550px;
+	margin: 0.25rem 0;
+	color: #333;
+}
+
+footer {
+	text-align: center;
+	padding: 1rem;
+	margin-top: 3rem;
+	color: #555;
+	font-size: 0.9rem;
+}
+
+@media (min-width: 700px) {
+	.book {
+		display: grid;
+		grid-template-columns: 200px 2px 1fr;
+		align-items: start;
+		gap: 2rem;
+		border-bottom: none;
+	}
+
+	.book-divider {
+		display: block;
+		background-color: #f2d4b6;
+		width: 2px;
+		height: 100%;
+		border: none;
+		margin: 0;
+		justify-self: center;
+	}
+
+	.publisher-info {
+		text-align: right;
+		font-size: 0.95rem;
+		font-style: italic;
+		color: #444;
+		align-self: start;
+	}
+
+	.book-info {
+		text-align: left;
+	}
+
+	.book-info h2 {
+		font-size: 1.5rem;
+	}
+}
