@@ -7,7 +7,6 @@
     const creditCardContainer = document.querySelector('#creditCardNumberContainer');
     const paypalContainer = document.querySelector('#paypalUsernameContainer');
     const creditInput = document.querySelector('#creditCardNumberContainer input');
-    const paypalInput = document.querySelector('#paypalUsernameContainer input');
  
 function togglePaymentDetails(e) {
     

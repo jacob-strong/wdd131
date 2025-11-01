@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="creditcard.css">
+    <script src="creditcard.js" defer></script>
+</head>
+<body>
+    <main>
+        <div id="form-grid">
+            <div id="front-grid">
+                <div id="total">
+                    <p>TOTAL: $199</p>
+                </div>
+                <div id="card-number">
+                    <label for="card-number">CARD NUMBER</label>
+                    <input type='text' id='cardNumber' name="cardNum" placeholder="CN" aria-labelledby="cardNumber">
+                </div>
+                <div id="card-holder">
+                    <label for="card-holder">CARD HOLDER</label>
+                    <input type='text' id='cardHolder' name="cardName" placeholder="CH" aria-labelledby="cardHolder">
+                </div>
+                <div id="card-icon">
+                    <p>💳</p>
+                </div>
+                <div id="expiration">
+                    <label for="expiration">EXPIRATION</label>
+                    <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate">
+                    <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate">
+                </div>
+            </div>
+            <div id="back-grid">
+                <hr id="magstripe">
+                <div id="cvv">
+                    <label for="cvv">CVC/CVV</label>
+                    <input type='text' id='pin' name="cvvPin" placeholder="CVV" aria-labelledby="cvvPin">
+                </div>
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+    </main>
+</body>
+</html>
