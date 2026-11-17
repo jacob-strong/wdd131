@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    border: none;
+    background-color: #efddb8;
+    height: 3px
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Merriweather', serif;
+    color: #860005;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #a14e5b;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.publisher-info {
+    justify-content: flex-end;
+    text-align: end;
+}
+
+#release-date {
+    font-style: italic;
+}
+
+.book-info {
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+@media (min-width: 700px) {
+    .book-list {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .vertical-divider {
+        width: 3px;
+        height: auto;
+        align-self: stretch;
+        margin: 0;
+    }
+
+    .book-info {
+        text-align: start;
+    }
+}
